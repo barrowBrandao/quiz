@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ranking</h1>
+        <ul id="ranking-lista"></ul>
+        <button onclick="window.location.href='index.html'">Voltar ao Início</button>
+    </div>
+    
+    <script src="ranking.js"></script>
+
+    <button id="toggle-contrast" aria-label="Ativar ou desativar alto contraste" style="position: fixed; top: 10px; right: 10px; z-index: 1000;">
+        Alto Contraste
+    </button>
+    <script>
+    document.getElementById("toggle-contrast").addEventListener("click", function () {
+        document.body.classList.toggle("high-contrast");
+    });
+    </script>
+    
+</body>
+</html>
